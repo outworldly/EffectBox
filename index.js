@@ -1,3 +1,10 @@
+// fetch ip to stream to other user
+function fetchIP() {
+  fetch("https://checkip.amazonaws.com/").then(res => res.text()).then(data => console.log(data))
+}
+
+fetchIP()
+
 // stream video
 var canvas = document.querySelector("canvas");
     var context = canvas.getContext("2d");
