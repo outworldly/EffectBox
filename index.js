@@ -1,3 +1,4 @@
+// stream video
 var canvas = document.querySelector("canvas");
     var context = canvas.getContext("2d");
     const video = document.querySelector('#myVidPlayer');
@@ -13,7 +14,7 @@ var canvas = document.querySelector("canvas");
             video.onloadedmetadata = (e) => {
                 video.play();
                 
-                //new
+        
                 w = video.videoWidth;
                 h = video.videoHeight
                 
@@ -24,3 +25,8 @@ var canvas = document.querySelector("canvas");
         .catch(error => {
         	alert('You have to enable the mic and the camera');
     	});
+// hide controls FireFox
+var vids = $("video"); 
+$.each(vids, function(){
+       this.controls = false; 
+}); 
