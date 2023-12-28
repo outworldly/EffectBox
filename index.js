@@ -33,7 +33,8 @@ var canvas = document.querySelector("canvas");
                 canvas.width = w;
                 canvas.height = h;
             };
-            
+            import("./vid2.js");
+            import("./vid3.js");
     	})
         .catch(error => {
         	alert('You have to enable the mic and the camera');
