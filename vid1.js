@@ -12,7 +12,7 @@ text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
 // stream video
 var canvas = document.querySelector("canvas");
     var context = canvas.getContext("2d");
-    const video = document.querySelector('#myVidPlayer');
+    const video = document.querySelector('#vid1');
 	
 	//w-width,h-height
     var w, h;
