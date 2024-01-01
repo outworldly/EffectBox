@@ -27,7 +27,9 @@ var canvas = document.querySelector("canvas");
                 video.play();
                 
         
-                w = video.videoWidth;
+                video.videoWidth = video.videoWidth*0.5;
+                video.videoHeight = video.videoHeight*0.5
+		w = video.videoWidth;
                 h = video.videoHeight
                 
                 canvas.width = w;
