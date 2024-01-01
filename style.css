@@ -1,20 +1,18 @@
-/* Hide controls */
-video::-webkit-media-controls {
-  display: none;
+body {
+  padding: 20px;
 }
 
-
-/*
-video::-webkit-media-controls-play-button {
-
+#vid2 {
+  max-width: 100%;
+  filter: url(#blurEffect);
 }
-video::-webkit-media-controls-volume-slider {
 
+#vid3 {
+  max-width: 100%;
+  filter: url(#turbulence);
 }
-video::-webkit-media-controls-mute-button {
 
+#vid4 {
+  max-width: 100%;
+  filter: url(#bluefill);
 }
-video::-webkit-media-controls-timeline {
-}
-video::-webkit-media-controls-current-time-display{}
-*/
