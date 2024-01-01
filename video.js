@@ -44,4 +44,23 @@ const content = document.querySelector('#vid1');
                 canvas.height = h;
             };
 
+// 4
+    var video = document.querySelector('#vid4');
 
+	
+	//w-width,h-height
+    var w, h;
+    canvas.style.display = "none";
+	
+
+            video.srcObject = content.srcObject;
+            video.onloadedmetadata = (e) => {
+                video.play();
+                
+        
+                w = video.videoWidth;
+                h = video.videoHeight
+                
+                canvas.width = w;
+                canvas.height = h;
+            };
