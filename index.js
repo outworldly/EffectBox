@@ -11,5 +11,5 @@ text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
   console.log(ip);
 });
 
-//POSSIBLY INSECURE IF NEWTEXT BECOMES A VARIABLE!!
-document.getElementById("greet").innerHTML=ip, "'s Effect Box";
+
+document.getElementById("greet").textContent=ip, "'s Effect Box";
