@@ -1,8 +1,8 @@
 
-// stream video
+// 2
 var canvas = document.querySelector("canvas");
     var context = canvas.getContext("2d");
-    const video = document.querySelector('#vid2');
+    var video = document.querySelector('#vid2');
 const content = document.querySelector('#vid1');
 	
 	//w-width,h-height
@@ -23,8 +23,25 @@ const content = document.querySelector('#vid1');
             };
 
 
-// hide controls FireFox
-var vids = $("video"); 
-$.each(vids, function(){
-       this.controls = false; 
-}); 
+// 3
+    var video = document.querySelector('#vid3');
+
+	
+	//w-width,h-height
+    var w, h;
+    canvas.style.display = "none";
+	
+
+            video.srcObject = content.srcObject;
+            video.onloadedmetadata = (e) => {
+                video.play();
+                
+        
+                w = video.videoWidth;
+                h = video.videoHeight
+                
+                canvas.width = w;
+                canvas.height = h;
+            };
+
+
