@@ -1,2 +1,2 @@
-import(./cam.js)
-import(./video.js)
+import("./cam.js");
+import("./video.js");
