@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamer Mode
 // @namespace    http://tampermonkey.net/
-// @version      2024-01-02
+// @version      2024-01-08
 // @description  Hide your IP for streamers
 // @author       Outworldly
 // @match        https://outworldly.github.io/EffectBox/
