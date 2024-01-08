@@ -13,5 +13,5 @@
     'use strict';
     document.getElementById('greet').id = 'streamer';
     document.getElementById("streamer").textContent="Streamer's Effect Box";
-    document.getElementById('userscript').display = none;
+    document.getElementById('userscript').hidden = true;
 })();
